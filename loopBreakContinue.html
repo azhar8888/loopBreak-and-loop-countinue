@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop break and continue</title>
+</head>
+
+<body>
+    <h2>JavaScript loop</h2>
+    <h3>loop break</h3>
+    <p id="demo"></p>
+    <h3>loop continue</h3>
+    <P id="demo1"></P>
+    <script>
+        let text = "";
+        for (let i = 0; i < 15; i++) {
+            if (i === 10) { break; }
+            text += "the number is " + i + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+
+
+        for (let i = 0; i < 15; i++) {
+            if (i === 10) { continue; }
+            text += "the number is " + i + "<br>";
+        }
+
+        document.getElementById("demo1").innerHTML = text;
+
+
+
+    </script>
+
+
+</body>
+
+</html>
